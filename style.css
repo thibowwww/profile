@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: #1E262C;
   font-family: 'Ubuntu', sans-serif;
   font-size: 14px;
   line-height 1.2;
@@ -13,38 +13,39 @@ header {
 }
 
 h1 {
-  color: #00adb5;
-  font-family: 'Poppins';
+  color: #FF9200;
+  font-family: 'Varela Round';
   font-size: 30px;
 }
 
 h2 {
-  color: #393e46;
+  color: #F5F5F5;
   font-family: 'Ubuntu';
 }
 
 h3 {
-  color: #222831;
+  color: #F5F5F5;
   font-family: 'Ubuntu';
 }
 
 p {
+  color: #F5F5F5;
   font-family: Open Sans;
   font-weight: 300;
 }
 
 a {
-  color: #00adb5;
+  color: #FF9200;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ff677d;
+  color: #8ecbf9;
   text-decoration: underline;
 }
 
 img {
-  border-radius: 50%;
+  border-radius: 3%;
 }
 
 .text-center {
@@ -52,9 +53,8 @@ img {
 }
 
 .card-grey {
-  background: #F5F5F5;
+  background: #393e46;
   padding: 30px;
-  border: 1px solid lightgrey;
 }
 
 .list-inline > li {
@@ -62,23 +62,80 @@ img {
   padding: 0px 20px;
 }
 
+.inline-block {
+  display: flex;
+  padding: 0px 20px;
+  justify-content: space-around;
+}
+
+.banner {
+  background-image: url("images/space.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+
+.banner-content {
+  position: relative;
+}
+
+.filter {
+  background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
 @media (max-width: 960px) {
   /* For a screen < 960px, this CSS will be read */
   .container {
     width: 700px;
+    margin: auto;
+  }
+  .inline-block {
+    display: inline-block;
+    padding: 0px 20px;
   }
 }
 @media (max-width: 720px) {
   /* For a screen < 720px, this CSS will be read */
   .container {
     width: 500px;
+    margin: auto;
+  }
+  .inline-block {
+    display: inline-block;
+    padding: 0px 20px;
   }
 }
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
     width: 300px;
+    margin: auto;
   }
+   .inline-block {
+    display: inline-block;
+    padding: 0px 20px;
+  }
+}
+
+.project {
+  width: 200px;
+}
+
+.button {
+  background-color: #FF9200;
+  color: white;
+  font-color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 /*font-family: 'Ubuntu', sans-serif;
